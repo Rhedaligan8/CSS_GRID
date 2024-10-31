@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="listofstudents.css" type="text/css">
+    <link rel="icon" href="svfclogo.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="nav">
+        <a href="listofproduct.html">Product</a>
+        <a href="listofemployees.html">Employees</a>
+        <a href="listofstudents.html">Student</a>
+        <a href="listofdept.html">Departments</a>
+        <a href="displayfamily.html">My Family</a>
+    </div>
+    <h5>ST.VINCENT DE FERRER STUDENT LIST PANEL</h5>
+    <div class="header" style="display: flex; flex-direction: row; ">
+        <img src="svfclogo.png" alt="svfclogo" style="height: 40px; width: auto; margin-top: 20px;">
+        <h1>Student List</h1>
+    </div>
+    <input type="text" id="search" placeholder="Search by Student ID (e.g., SVFC-001)" onkeyup="filterStudents()">
+    <div class="container" id="studentContainer">
+        <div class="student-card" data-id="SVFC-001">
+            <img src="https://via.placeholder.com/100" alt="SVFC-001" class="profile-img">
+            <h2>Stud ID: SVFC-001</h2>
+            <p> Name: Aligan, Rhed N.</p>
+            <p>Address: Camarin, Caloocan City</p>
+            <p>Course: Information Technology</p>
+            <p>Grade Level: 4th Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-002">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-002</h2>
+            <p>Name: Danilo, Buenafe</p>
+            <p>Address: San Jose, Bulacan</p>
+            <p>Course: Information Technology</p>
+            <p>Grade Level: 4th Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-003">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-003</h2>
+            <p>Name: Jusfer Gariando</p>
+            <p>Address: North Caloocan</p>
+            <p>Course: Elementary Education</p>
+            <p>Grade Level: 2nd Year</p>
+            <p>Batch (SY): 2023-2024</p>
+        </div>
+        <div class="student-card" data-id="SVFC-004">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-004</h2>
+            <p>Name: Stephen Agait </p>
+            <p>Address: North Caloocan</p>
+            <p>Course: BSHM</p>
+            <p>Grade Level: 1st Year</p>
+            <p>Batch (SY): 2022-2023</p>
+        </div>
+        <div class="student-card" data-id="SVFC-005">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-005</h2>
+            <p>Name: Telly Velance </p>
+            <p>Address: South Caloocan</p>
+            <p>Course: Elementary Education</p>
+            <p>Grade Level: 2nd Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-006">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-006</h2>
+            <p>Name: Louie Rendallos </p>
+            <p>Address: Camarin, Caloocan City</p>
+            <p>Course: BSED</p>
+            <p>Grade Level: 1st Year</p>
+            <p>Batch (SY): 2022-2023</p>
+        </div>
+        <div class="student-card" data-id="SVFC-007">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-007</h2>
+            <p>Name: Carlos Yulo </p>
+            <p>Address: Bagong Silang</p>
+            <p>Course: Information Technology</p>
+            <p>Grade Level: 3rd Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-008">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-008</h2>
+            <p>Name: Maria Makiling </p>
+            <p>Address: Camarin, Caloocan City</p>
+            <p>Course: BSHM</p>
+            <p>Grade Level: 2nd Year</p>
+            <p>Batch (SY): 2022-2023</p>
+        </div>
+        <div class="student-card" data-id="SVFC-009">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-009</h2>
+            <p>Name: Dayana Harurot </p>
+            <p>Address: Olympus, Camarin</p>
+            <p>Course: Elementary Education</p>
+            <p>Grade Level: 3rd Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-010">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-010</h2>
+            <p>Name: Chi-chi Tikboy </p>
+            <p>Address: Phase 3, Bagong Silang</p>
+            <p>Course: Information Technology</p>
+            <p>Grade Level: 4th Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-011">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-011</h2>
+            <p>Name: Kanor Imaw </p>
+            <p>Address: Phase 7, Bagong Silang</p>
+            <p>Course: BSED</p>
+            <p>Grade Level: 1st Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-012">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-012</h2>
+            <p>Name: Danaya Encantadia </p>
+            <p>Address: Camarin Sto. Nino, Cal.</p>
+            <p>Course: BSED</p>
+            <p>Grade Level: 1st Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+        <div class="student-card" data-id="SVFC-013">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <h2>Stud ID: SVFC-013</h2>
+            <p>Name: Jerald Soriano </p>
+            <p>Address: Phase 2, Bagong Silang</p>
+            <p>Course: Information Technology</p>
+            <p>Grade Level: 4th Year</p>
+            <p>Batch (SY): 2024-2025</p>
+        </div>
+    </div>
+
+    <script>
+        function filterStudents() {
+            const input = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.student-card');
+
+            cards.forEach(card => {
+                const id = card.getAttribute('data-id').toLowerCase();
+                if (id.includes(input)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
